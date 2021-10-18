@@ -78,7 +78,7 @@ class GlyphComponent {
   /// The icon font to use. Default (and only) is **material-icons-extended**.
   String _iconSet;
 
-  String get iconSet => _iconSet == null ? _materialIconsExtended : _iconSet;
+  String get iconSet => _iconSet ?? _materialIconsExtended;
 
   /// The set of icons to use. Only allowed value currently is
   /// `material-icons-extended`.
